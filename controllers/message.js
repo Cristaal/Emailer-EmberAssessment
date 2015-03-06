@@ -5,6 +5,9 @@ Emailer.MessageController = Ember.Controller.extend({
       var message =
       this.set('confirmationNumber', Math.round(Math.random() * 100000));
       this.set('messageSent', true);
+      this.set('address', '');
+      this.set('subject', '');
+      this.set('body', '');
     }
   }
 });
