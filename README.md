@@ -6,3 +6,4 @@ Written by Crystal Contreras-Grossman 2015
 Known bugs: Form field does not require input in order to be submitted
 
 MIT license
+1
