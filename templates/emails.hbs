@@ -1,9 +1,12 @@
 <h1>Emailer</h1>
 
 
-<li>{{email.address}}{{subject}}</li>
 
-
+<ul>
+  {{#each email in model}}
+  <li>Email Address: {{#link-to 'email' email}}{{email.address}}{{/link-to}}<br>Subject: {{email.subject}}</li>
+  {{/each}}
+</ul>
 
 
 <p>{{#link-to 'new-email' classNames="btn btn-primary"}}New Email{{/link-to}}
