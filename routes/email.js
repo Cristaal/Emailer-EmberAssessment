@@ -1,5 +1,5 @@
 Emailer.EmailRoute = Ember.Route.extend({
-  model: functio(params) {
-    return this.store.find('email', params.post_id);
+  model: function(params) {
+    return this.store.find('email', params.email_id);
   }
 });
